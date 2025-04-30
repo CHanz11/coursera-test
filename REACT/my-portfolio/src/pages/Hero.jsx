@@ -17,7 +17,7 @@ const HeroContainer = styled.div`
   flex-wrap: wrap; /* Allows for wrapping of content on smaller screens */
   
   @media (max-width: 1200px) {
-    padding: 0 5%;
+    padding: 5% 4%;
   }
 
   @media (max-width: 768px) {

@@ -68,8 +68,11 @@ const NavAnchor = styled(Link)`
   transition: 0.3s;
 
   &:hover {
-    border-color: #00e6ff;
-    box-shadow: 0 0 10px #00e6ff;
+  text-shadow:
+    0 0 5px #00e6ff,
+    0 0 10px #00e6ff,
+    0 0 20px #00e6ff,
+    0 0 40px #00e6ff;
   }
 `;
 

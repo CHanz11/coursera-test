@@ -13,10 +13,16 @@ function About() {
       flexWrap: "wrap",
       alignItems: "center",
       justifyContent: "center",
-      gap: "40px"
+      gap: "40px",
+      flexDirection: "row",
     }}>
+      {/* Image on the left */}
       <AnimatedSection animation={zoomIn} delay={0.3}>
-        <div style={{ flex: "1 1 300px", textAlign: "center" }}>
+        <div style={{
+          flex: "1 1 300px",
+          display: "flex",
+          justifyContent: "center"
+        }}>
           <img
             src="/images/profile-2.jpg"
             alt="Christian Bagatua"
@@ -32,8 +38,12 @@ function About() {
         </div>
       </AnimatedSection>
 
+      {/* Text on the right */}
       <AnimatedSection animation={zoomIn} delay={0.4}>
-        <div style={{ flex: "2 1 400px" }}>
+        <div style={{
+          flex: "2 1 400px",
+          textAlign: "left"
+        }}>
           <h1 style={{
             fontSize: "2.5rem",
             fontFamily: "Orbitron, sans-serif",
@@ -42,6 +52,7 @@ function About() {
           }}>
             About Me
           </h1>
+
           <p style={{ fontSize: "1.1rem", lineHeight: "1.6" }}>
             Hi! I'm <strong>Christian G. Bagatua</strong>, a passionate and detail-oriented <strong>Computer Engineer</strong> based in Cebu City. 
             I currently work as a <strong>Quality Control Specialist at Proweaver Inc.</strong>, with experience in both software development and hardware prototyping. <br /><br />
